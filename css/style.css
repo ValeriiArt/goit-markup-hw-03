@@ -28,6 +28,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+.item {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+.reset {
+  font-style: normal;
+}
 /* Скивает заголовки, которых нет в макете */
 .visually-hidden {
   position: absolute;
@@ -46,33 +55,27 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-.reset {
-  font-style: normal;
+.section {
+  padding: 94px 0;
 }
-.item {
-  list-style-type: none;
-}
-.link {
-  text-decoration: none;
-}
-
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
 }
 .logo-hd {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
   color: #000;
 }
 .logo-col {
   color: var(--decorative-color-text);
 }
 .ft-logo {
+  margin-bottom: 20px;
   color: #ffffff;
 }
 .btn {
@@ -81,12 +84,14 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
   border-radius: 4px;
+  border: transparent;
   cursor: pointer;
 }
 .btn-main {
   margin: 0 auto;
+  padding: 10px 32px;
   color: #ffffff;
   background: var(--decorative-color-text);
 }
@@ -94,8 +99,12 @@ img {
 .btn-main:focus {
   background-color: #fff;
   color: var(--decorative-color-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .btn-filter {
+  font-weight: 500;
+  padding: 6px 22px;
   color: var(--main-color-title);
   background: #f5f4fa;
 }
@@ -103,10 +112,9 @@ img {
 .btn-filter:hover {
   color: #fff;
   background: var(--decorative-color-text);
-}
-.btn-active {
-  color: #fff;
-  background-color: var(--decorative-color-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /* ---------------HEADER----------------- */
 .header {
@@ -168,6 +176,7 @@ img {
 /* -------------END.HEADER--------------- */
 /* ------------Section HERO-------------- */
 .hero {
+  padding: 200px 0;
   background: #2f303a;
 }
 
@@ -185,8 +194,6 @@ img {
 /* ----------Section features------------ */
 .features-list {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
@@ -207,6 +214,9 @@ img {
 }
 /* --------End.Section features---------- */
 /* ---------Section our work -------------*/
+.work-section {
+  padding-top: 0;
+}
 .our-work-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -217,7 +227,6 @@ img {
 }
 .our-work-list {
   display: flex;
-  margin-bottom: 94px;
 }
 .our-work-item:not(:last-child) {
   margin-right: 30px;
@@ -239,11 +248,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
 }
 .team-item {
+  background-color: #fff;
   margin-left: 30px;
-  margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .card-text {
   padding-top: 30px;
@@ -265,8 +276,12 @@ img {
 }
 /* ---------End.Section our team -------------*/
 /* ----------------FOOTER-------------------- */
-.ft-color {
+.footer {
   background-color: #2f303a;
+  padding: 60px 0;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .location {
   font-size: 14px;
@@ -289,14 +304,10 @@ img {
 .filter {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
-}
-.gallery-section {
-  margin-bottom: 94px;
 }
 .gallery {
   display: flex;
